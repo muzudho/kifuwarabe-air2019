@@ -27,8 +27,26 @@ function Remove-FolderToRecycleBin($dir) {
     }
 }
 
+
+# +
+# | Source
+# | ------
+# +
 $sr = "C:\Users\むずでょ\source\repos\kifuwarabe-air2019\kifuwarabe-air2019"
 $ds = "C:\Users\むずでょ\Documents\GitHub\kifuwarabe-air2019\kifuwarabe-air2019"
+
+Remove-FolderToRecycleBin($ds)
+
+Write-Host "Copy            | [$sr] --to--> [$ds]."
+Copy-Item $sr -destination $ds -recurse
+
+
+# +
+# | Blog
+# | ----
+# +
+$sr = "C:\Users\むずでょ\source\repos\kifuwarabe-air2019\blog"
+$ds = "C:\Users\むずでょ\Documents\GitHub\kifuwarabe-air2019\blog"
 
 Remove-FolderToRecycleBin($ds)
 

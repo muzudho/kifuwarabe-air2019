@@ -1,4 +1,7 @@
 /*
+# Current directory
+cd ./kifuwarabe-air2019
+
 # - Log level.
 #$env:RUST_LOG = "trace"
 #$env:RUST_LOG = "debug"
